@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ======== RESET E BASE ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  background: linear-gradient(90deg, #0d6efd, #0044cc);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffda79 !important;
+}
+
+/* ======== MENU LATERAL ======== */
+.sidebar {
+  min-height: 100vh;
+  border-right: 1px solid #ddd;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.sidebar .nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* ======== CONTEÚDO PRINCIPAL ======== */
+h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #0d6efd;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* ======== CARDS DE PRODUTOS ======== */
+#cards {
+  padding: 2rem 0;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.card-text {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #084298;
+}
+
+/* ======== IFRAME DE PRODUTOS ======== */
+#produtos {
+  display: none;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#produtos {
+  display: block; /* <-- troque de none para block */
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#close-btn {
+  display: inline-block; /* <-- troque de none para inline-block */
+}
+
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 991px) {
+  .sidebar {
+    position: fixed;
+    top: 56px;
+    left: -100%;
+    width: 220px;
+    height: calc(100% - 56px);
+    z-index: 1000;
+    background: #fff;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  #MENU {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
