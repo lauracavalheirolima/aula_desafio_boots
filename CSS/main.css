@@ -1,0 +1,91 @@
+/* ---------- Geral ---------- */
+body {
+  background-color: #f8f9fa; /* Fundo claro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar input {
+  border-radius: 20px;
+  padding-left: 15px;
+}
+
+/* ---------- Sidebar ---------- */
+aside {
+  min-height: 100vh;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+aside h5 {
+  margin-bottom: 15px;
+}
+
+/* ---------- Carousel ---------- */
+.carousel-inner img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ---------- Cards de eventos ---------- */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card h5 {
+  font-weight: bold;
+}
+
+/* ---------- Botões ---------- */
+.btn-success {
+  border-radius: 20px;
+}
+
+.btn-primary, .btn-warning, .btn-danger {
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+/* ---------- Modais ---------- */
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  background-color: #0d6efd;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal-body input, .modal-body textarea {
+  border-radius: 10px;
+}
+
+/* ---------- Contador de eventos ---------- */
+#eventCount {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ---------- Responsividade ---------- */
+@media(max-width: 768px){
+  aside {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  .carousel-inner img {
+    height: 180px;
+  }
+}
